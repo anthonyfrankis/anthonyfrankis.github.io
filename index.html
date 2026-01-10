@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anthony Frankis - Especialista en Desarrollo Backend PHP y Soporte Técnico WordPress con 7 años de experiencia. Soluciones de software y reparación de sitios web.">
+    <title>Anthony Frankis | PHP Developer & WordPress Expert</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #121212;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 100px 0 50px 0;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card {
+            border: none;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .sticky-nav {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top sticky-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">*FRANKIS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="btn btn-success ms-lg-3 rounded-pill shadow" href="https://wa.link/qx3es3"><i class="bi bi-whatsapp"></i> Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">Reparación rápida de sitios web por expertos en WordPress</h1>
+            <p class="lead">Reparamos sitios web dañados, hackeados y lentos para que vuelvas a estar online sin estrés.</p>
+            <p class="lead mb-5">Arreglos desde 79$, Soporte experto y confiable.</p>
+            <a href="https://wa.link/qx3es3" class="btn btn-success btn-lg px-5 shadow rounded-pill"><i class="bi bi-whatsapp"></i> Solicitar Diagnóstico Técnico</a>
+        </div>
+    </header>
+
+    <section class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row opacity-75">
+                <div class="col-md-4"><h5>+7 Años de Experiencia</h5></div>
+                <div class="col-md-4"><h5>PHP & MySQL Expert</h5></div>
+                <div class="col-md-4"><h5>WordPress Security Pro</h5></div>
+            </div>
+        </div>
+    </section>
+
+   <!--  <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal">Servicios Especializados</h2>
+            <div class="row g-4">
+                <div class="col-md-6 reveal">
+                    <div class="card service-card p-4 bg-light">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-code-slash"></i></div>
+                        <h3>Desarrollo de Software</h3>
+                        <p>Tu modelo de negocio merece un motor que no le ponga límites. Construyo sistemas escalables y optimizados en PHP.</p>
+                        <ul>
+                            <li>Sistemas Dedicados a medida</li>
+                            <li>Optimización de bases de datos</li>
+                            <li>APIs Robustas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal">
+                    <div class="card service-card p-4 bg-light">
+                        <div class="display-5 text-primary mb-3"><i class="bi bi-wordpress"></i></div>
+                        <h3>Soporte Técnico WordPress Pro</h3>
+                        <p>Recupera la estabilidad de tu sitio web. Especialista en reparación de errores críticos y optimización.</p>
+                        <ul>
+                            <li>Eliminación de Malware y Seguridad</li>
+                            <li>Optimización de velocidad (WPO)</li>
+                            <li>SEO Técnico y redirecciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 reveal">
+                    <img src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg" alt="Anthony Frankis" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 reveal">
+                    <h2 class="mb-4">Pasión por el código, enfoque en resultados</h2>
+                    <p>Soy Anthony Frankis, y mi misión es aportar valor real a través de la tecnología. Con 7 años en el sector, he aprendido que el código no solo debe funcionar, debe ser una ventaja estratégica para tu negocio.</p>
+                    <p>Combino mi conocimiento profundo de PHP con la versatilidad de WordPress para ofrecer soluciones que otros consideran imposibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal">Preguntas Frecuentes</h2>
+            <div class="accordion reveal" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            ¿Por qué mi WordPress va lento?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Suele deberse a plugins mal configurados, imágenes pesadas o falta de optimización a nivel servidor. Con mi servicio de WPO, analizamos y corregimos cada punto de fuga de rendimiento.
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 reveal">
+                    <div class="card p-4 shadow-sm">
+                        <h2 class="text-center mb-4">¿Listo para empezar?</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo electrónico corporativo</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">¿En qué puedo ayudarte?</label>
+                                <select class="form-select">
+                                    <option value="desarrollo_software">Desarrollo de Software</option>
+                                    <option value="wp">Soporte WordPress</option>
+                                    <option value="consultoria">Consultoría Técnica</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">URL de tu sitio web (si aplica)</label>
+                                <input type="url" class="form-control" placeholder="https://tuweb.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Cuéntame tu problema o proyecto</label>
+                                <textarea class="form-control" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 btn-lg">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2026 Frankis Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Animación al hacer scroll (Reveal)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
